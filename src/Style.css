@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #111; }
+
+li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+
+b {
+  color: #c7b299; }
+
+section#Container {
+  width: 100%;
+  max-width: 1920px;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box; }
+  @media screen and (max-width: 425px) {
+    section#Container {
+      flex-direction: column; } }
+  section#Container section#left_main {
+    width: 30%;
+    height: 100vh;
+    box-sizing: border-box; }
+    @media screen and (max-width: 1024px) {
+      section#Container section#left_main {
+        width: 40%; } }
+    @media screen and (max-width: 768px) {
+      section#Container section#left_main {
+        width: 45%; } }
+    @media screen and (max-width: 425px) {
+      section#Container section#left_main {
+        width: 100%;
+        height: 50vh;
+        order: 1; } }
+    section#Container section#left_main section#Search {
+      width: 100%;
+      height: 10%;
+      background: #111;
+      font-family: Geneva, Arial, Helvetica, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+    section#Container section#left_main section#Clients_List {
+      width: 100%;
+      height: 90%;
+      font-family: Geneva, Arial, Helvetica, sans-serif;
+      box-sizing: border-box;
+      overflow-x: hidden; }
+  section#Container section#right_main {
+    width: 70%;
+    height: 100vh;
+    box-sizing: border-box; }
+    @media screen and (max-width: 1024px) {
+      section#Container section#right_main {
+        width: 60%; } }
+    @media screen and (max-width: 768px) {
+      section#Container section#right_main {
+        width: 55%; } }
+    @media screen and (max-width: 425px) {
+      section#Container section#right_main {
+        width: 100%;
+        height: 50vh;
+        order: 0; } }
+    section#Container section#right_main section#Clients_Info {
+      width: 100%;
+      height: 100%;
+      font-family: Geneva, Arial, Helvetica, sans-serif;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: row;
+      padding-top: 50px;
+      background: #191919; }
+
+/*# sourceMappingURL=Style.css.map */

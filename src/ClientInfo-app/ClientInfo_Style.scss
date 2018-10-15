@@ -1,0 +1,35 @@
+@import '../mixins.scss';
+div#Client_avatar_img {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+
+div#personalInfo {
+  h1 {
+    color: #c7b299;
+    font-size: 32px;
+    margin-top: 0;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #555;
+    @include BSizing;
+    @media screen and (max-width:425px) {
+      margin: 0;
+    }
+  }
+
+}
+
+div.Info_list {
+  padding: 20px;
+  color: #fff;
+}
+
+div.list_df {
+  display: flex;
+  flex-direction: column;
+  span.infoItem{
+    padding-top: 10px;
+  }
+}

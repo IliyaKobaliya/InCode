@@ -1,0 +1,28 @@
+div#Client_avatar_img {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: start; }
+
+div#personalInfo h1 {
+  color: #c7b299;
+  font-size: 32px;
+  margin-top: 0;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #555;
+  box-sizing: border-box; }
+  @media screen and (max-width: 425px) {
+    div#personalInfo h1 {
+      margin: 0; } }
+
+div.Info_list {
+  padding: 20px;
+  color: #fff; }
+
+div.list_df {
+  display: flex;
+  flex-direction: column; }
+  div.list_df span.infoItem {
+    padding-top: 10px; }
+
+/*# sourceMappingURL=ClientInfo_Style.css.map */

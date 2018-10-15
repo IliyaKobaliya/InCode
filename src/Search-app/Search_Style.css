@@ -1,0 +1,32 @@
+div#search_div {
+  width: 80%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #c3c3c3;
+  box-sizing: border-box; }
+  @media screen and (max-width: 425px) {
+    div#search_div {
+      width: 100%;
+      height: 90%; } }
+  div#search_div #search_input {
+    width: 80%;
+    height: 100%;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+    border: none; }
+  div#search_div #search_btn {
+    width: 20%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border: none;
+    cursor: pointer; }
+
+i.big {
+  font-size: 20px;
+  color: #111; }
+
+/*# sourceMappingURL=Search_Style.css.map */

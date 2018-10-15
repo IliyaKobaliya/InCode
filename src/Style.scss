@@ -1,0 +1,89 @@
+@import './mixins.scss';
+body {
+  margin: 0;
+  padding: 0;
+  background: #111;
+}
+
+li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+b {
+  color: #c7b299;
+}
+section#Container {
+  width: 100%;
+  max-width: 1920px;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  @media screen and (max-width:425px){
+    flex-direction: column;
+  }
+  @include BSizing;
+  section#left_main {
+    width: 30%;
+    height: 100vh;
+    //border: 1px solid black;
+    @include BSizing;
+    @media screen and (max-width:1024px) {
+      width: 40%;
+    }
+    @media screen and (max-width:768px) {
+      width: 45%;
+    }
+    @media screen and (max-width:425px) {
+      width: 100%;
+      height: 50vh;
+      order:1;
+    }
+    section#Search {
+      width: 100%;
+      height: 10%;
+      background: #111;
+      @include FFamily;
+     // border: 1px solid black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    section#Clients_List {
+      width: 100%;
+      height:90%;
+      @include FFamily;
+      @include BSizing;
+     // border: 1px solid black;
+      overflow-x: hidden;
+    }
+  }
+  section#right_main {
+    width: 70%;
+    height: 100vh;
+    //border: 1px solid black;
+    @include BSizing;
+    @media screen and (max-width:1024px) {
+      width: 60%;
+    }
+    @media screen and (max-width:768px) {
+      width: 55%;
+    }
+    @media screen and (max-width:425px) {
+      width: 100%;
+      height: 50vh;
+      order: 0;
+    }
+    section#Clients_Info {
+      width: 100%;
+      height: 100%;
+      @include FFamily;
+      @include BSizing;
+     // border: 1px solid black;
+      display: flex;
+      flex-direction:row;
+      padding-top: 50px;
+      background: #191919;
+    }
+  }
+}
